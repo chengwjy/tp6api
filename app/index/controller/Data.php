@@ -1,9 +1,9 @@
 <?php
-namespace app\controller;
+namespace app\index\controller;
 
 use app\BaseController;
 use think\facade\Db;
-use app\model\Poet;
+use app\common\model\Poet;
 class Data extends BaseController
 {
     public function index()
