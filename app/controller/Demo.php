@@ -9,7 +9,7 @@ class Demo extends BaseController
     {
         var_dump($this->request->param('id', 0, 'intval'));
         // 输出api
-        dump(json(['code' => 1]));
+        dump(json(['code' => 11]));
 
     }
 
