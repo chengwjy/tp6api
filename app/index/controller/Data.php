@@ -8,7 +8,7 @@ class Data extends BaseController
 {
     public function index()
     {
-        // 只有门面模式下的Db才有::name()方法
+        // 只有门面模式下的Db才有::name()方法1
         $result = Db::name('poet')->select();
         var_dump($result);
     }
