@@ -1,0 +1,6 @@
+ view(视图层)  <-->  controller(控制器)  <--> 业务逻辑层(business) <--> lib（基础库-非业务）
+                            ⬆
+                            |
+                            |
+                            ⬇
+                        model(模型)
