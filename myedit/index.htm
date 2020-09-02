@@ -1,0 +1,329 @@
+{template 'public_https'}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>商标转让出售_设计注册商标_专利版权交易服务-氧趣网</title>
+		<meta name="keywords" content="注册商标,转让商标,品牌商标转让,注册商标,专利申请,版权注册,"/>  
+		<meta  name="description" content="氧趣网国内知识产权服务权威品牌，提供商标注册、商标转让、专利申请、版权注册等服务，全类目百万海量商标资源供您挑选,是集商标注册、商标转让、商标设计、专利申请、知识产权保护等综合服务平台。"/>
+		<meta name="baidu-site-verification" content="HUMWA7wcgC" />
+		<link rel="canonical" href="//www.yangqu.com/" />
+		<link rel="icon" href="//www.yangqu.com/favicon.ico" type="image/x-icon"/>
+		<link rel="stylesheet" type="text/css" href="/file/brand/index/css/index.css?t=3">
+		<link rel="stylesheet" type="text/css" href="//www.yangqu.com/file/plug-in/swiper.min.css" />
+		<script src="//www.yangqu.com/file/plug-in/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="//www.yangqu.com/file/plug-in/Hz2Py-min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="//www.yangqu.com/file/plug-in/date.js" type="text/javascript" charset="utf-8"></script>
+		<!-- <script src="//www.yangqu.com/file/plug-in/vue.min.js" type="text/javascript" charset="utf-8"></script> -->
+		<script src="/file/brand/index/plug-in/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="//www.yangqu.com/file/index/plug-in/jquery.qrcode.js" type="text/javascript" charset="utf-8"></script>
+		<script src="//www.yangqu.com/file/plug-in/swiper.js" type="text/javascript" charset="utf-8"></script>
+		<script src="//www.yangqu.com/file/plug-in/axios.js" type="text/javascript" charset="utf-8"></script>
+		<script src="//www.yangqu.com/file/script/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="//www.yangqu.com/images/return_new.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+	<script>
+	    videos =  document.getElementById('mysVideo');
+	    function testVideos(te,status){
+	        if(status){
+	            $("#mysVideo").attr('src','//cdn.yangqu.com/yq-vd/xm/yq_newyear.mp4');
+	        }else{
+	            $("#mysVideo").attr('src','//cdn.yangqu.com/crm/mp4/yq.mp4');
+	        }
+	        // 关闭
+	        if(te == 0){
+	            $(".shiping-tk").removeClass('on');
+	            videos.pause();
+	        }
+	        // 打开
+	        else if(te == 1){
+	            $(".shiping-tk").addClass('on');
+	            videos.load();
+	            videos.play();
+	        }
+	    }
+	</script>
+	<style>
+	    .the-outv-box{
+	        width: 900px;
+	        height: 560px;
+	        position: absolute;
+	        left: 0;
+	        right: -36px;
+	        top: -18px;
+	        bottom: 0;
+	        border: 0;
+	        margin:auto;
+	    }
+	    .the-outv-box .the-vv-video{
+	        position: absolute;
+	        right: -36px;
+	        top: -18px;
+	        background: #000 url(/images/wd-imgs/footer_kefu_icon01.png)center center no-repeat;
+	        width: 36px;
+	        height: 36px;
+	        cursor: pointer;
+	        border-radius: 50%;
+	    }
+	    .shiping-tk{
+	        position: fixed;
+	        left: 0;
+	        top: 0;
+	        right: 0;
+	        bottom: 0;
+	        background: rgba(0,0,0,0.68);
+	        z-index: -1;
+	        opacity: 0;
+	    }
+	    .shiping-tk.on{
+	        opacity: 1;
+	        z-index: 999999999;
+	    }
+	    .shiping-tk #mysVideo{
+	        width: 900px;
+	        height: 560px;
+	        position: absolute;
+	        left: 0;
+	        top: 0;
+	        outline: none;
+	    }
+		.brand-show .typeselect ul li .li.on{
+			color:#4B84FB;
+			position: relative;
+		}
+		.brand-show .typeselect ul li .li.on:after{
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin-left: auto;
+			margin-right: auto;
+			bottom: 0;
+			width: 100px;
+			height: 4px;
+			background: #4b84fb;
+			border-radius: 2px;
+		}
+		.brand-show .typeselect{
+			margin-bottom: 0;
+			height: 54px;
+		}
+		.brand-show .typeselect ul li .li.on:after{
+			margin-bottom: -19px;
+		}
+	</style>
+	
+	<body>
+			<div class="shiping-tk">
+			    <div class="the-outv-box">
+			        <video  controls="controls" id="mysVideo" src="//cdn.yangqu.com/crm/mp4/yq.mp4"></video>
+			        <div class="the-vv-video" onclick="testVideos(0)"></div>
+			    </div>
+			</div>
+			{template 'publichead'}
+		<div class="swiper-container nav-banner">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" style='background-image: url(//cdn.yangqu.com/yq/brand/index/2-1.jpg);'>
+					<a href="https://rytk20.kuaishang.cn/bs/im.htm?cas=123219___301793&fi=126033&sText=YQWZhiChan" style="display:block;width:100%;height:100%;"></a>
+				</div>
+			</div>
+		</div>
+		<div class="quick-service cont">
+			<div class="mtitle">服务专区</div>
+			<dynamic></dynamic>
+			<div class="clear"></div>
+			<ul>
+				<li v-for='v in serviceList'>
+					<div class="CN">{{v.titleCN}}</div>
+					<div class="EN">{{v.titleEN}}</div>
+					<ol>
+						<li v-for='vv in v.list'>
+							<div class="icon effect">
+								<div class="img" :style="{'background-image':'url('+vv.img+')'}"></div>
+								<a :href="vv.link" target="_blank"></a>
+							</div>
+							<div class="word">{{vv.word}}</div>
+						</li>
+					</ol>
+				</li>
+			</ul>
+		</div>
+		<a href='//www.yangqu.com/about/brand_design.html' target="_blank" class="advertising cont" style='background-image: url(//cdn.yangqu.com/yq/brand/index/4-1.jpg);'></a>
+
+		<select-brand>
+
+		</select-brand>
+		<hot-brand></hot-brand>
+
+
+		<new-brand></new-brand>
+		
+		<service-list></service-list>
+		<!--
+		<a href='' target="_blank" class="advertising cont" style='background-image: url(//cdn.yangqu.com/yq/brand/index/8-1.jpg);'></a>
+		-->
+		
+		
+		<after-sales></after-sales>
+		
+		<news></news>
+		
+		<!-- 公司简介弹框 -->
+		
+		<div class='gsjjtk-mask'>
+			<div class="gsjjtk">
+				<div class='word1'>公司简介</div>
+				<div class='gsjj-close'></div>
+				<div class="desc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;氧趣网隶属于江西氧趣科技有限公司，是一家基于电商服务为基础的互联网科技创新型公司，自成立伊始，公司全力打造基于网店交易、知识产权、品牌管理、自营电商、直播带货、网店入驻、电商运营、新媒服务、企业服务、网红孵化等业务为主的一站式企业服务生态圈。同时以电商服务体系为载体，由构建互联到物联，从体系到生态的氧趣网商业生态圈。<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;根据公司战略布局，氧趣网已在全国成立8大分公司，员工2000余人,拥有超过万平的办公场地和业内顶尖的专业顾问团队，提供全天候一对一的业务咨询服务。公司成立至今，已为业内数以万计的商家客户提供过专业可靠的服务，在创始团队的努力下，已从业内一家名不经传的小公司成长为行业前列的领跑者，这背后，除了客户对我们公司的支持、认可与信赖外，更离不开公司始终坚持信息透明化、资源开放化、渠道多样化的经营理念，我们始终秉承着以客户为中心的同心圆核心价值观，以“为客户构建持续创造价值的商业未来”为使命，向着“打造一站式企业服务生态圈”这一目标不断的砥砺前行，不断的去创造更多的辉煌，不断的去为我们的客户创造价值，始终朝着“让您的企业服务于世界”的愿景而前行。通过以电商服务体系为载体，构建氧趣网商业生态圈，为我们的客户创造更大的价值和收益。</div>		
+			</div>
+		</div>
+		
+		<div class="about-us cont">
+			<div class="mtitle">关于我们<span>超千人专业团队，诚心为您服务！</span></div>
+			<div class="clear"></div>
+			<div class="comint rad on">公司简介</div>
+			<div class="comdis rad">公司分布</div>
+			<div class="comvid" onclick="testVideos(1)">
+				<div class="mask"></div>
+			</div>
+			<div class="screen">
+				<div class="gsfb">
+					<p>公司简介</p>
+					<p>氧趣网提供天猫、京东等商城代运营服务，金牌导师助阵，资深运营操盘，一站式电商托管。</p>
+					<p>氧趣网隶属于江西氧趣科技有限公司，是一家基于电商服务为基础的互联网科技创新型公司，自成立伊始，公司全力打造基于网店交易、知识产权、品牌管理、自营电商、直播带货、网店入驻、电商运营、新媒服务、企业服务、网红孵化等业务为主的一站式企业服务生态圈。<span class='show-gsjj'>查看全部</span></p>
+					<div class="img"></div>
+				</div>
+				<div class="gsjj">
+					<ul>
+						<li>
+							<div class="mask">
+								<p>九江总公司</p>
+								<p>地址：江西省九江市开发区长城路121号恒盛科技园6栋</p>
+							</div>
+						</li>
+						<li>
+							<div class="mask">
+								<p>杭州分公司</p>
+								<p>地址：浙江省杭州市萧山区宁围街道港汇中心2号写字楼4层</p>
+							</div>
+						</li>
+						<li>
+							<div class="mask">
+								<p>深圳分公司</p>
+								<p>地址：广东省深圳市宝安区航城大道华丰国际机器人产业园B栋6F</p>
+							</div>
+						</li>
+						<li>
+							<div class="mask">
+								<p>济南分公司</p>
+								<p>地址：山东省济南市高新区汉峪金谷a2-4-401</p>
+							</div>
+						</li>
+						<li>
+							<div class="mask">
+								<p>泉州分公司</p>
+								<p>地址：福建省泉州市丰泽区浦西万达广场万达中心B座5层</p>
+							</div>
+						</li>
+						<li>
+							<div class="mask">
+								<p>武汉分公司</p>
+								<p>地址：湖北省武汉市武昌区汉街总部国际A座2202室</p>
+							</div>
+						</li>
+						<li>
+							<div class="mask">
+								<p>苏州分公司</p>
+								<p>地址：江苏省苏州市工业园区星都街72号宏海大厦4层</p>
+							</div>
+						</li>
+						<li>
+							<div class="mask">
+								<p>邯郸分公司</p>
+								<p>地址：邯郸市丛台区人民路与中华大街口，友谊大厦B座1908</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		{if $_userid}<input type='hidden' id='info1' value='{$info[0]}'><input type='hidden' id='info2' value='{$info[1]}'><input type='hidden' id='is_login' value='0'>{/if}
+	</body>
+	</body>
+</html>
+
+<script type="module">
+	import {brandNav , brandNavStyle , dynamic,dynamicStyle  , brandShow ,serviceList ,serviceListStyle,afterSales , afterSalesStyle ,news, newsListStyle} from '/file/brand/index/js/components.js';
+	new brandNav({
+		propsData:{
+			on:'0',
+		}
+	}).$mount('brand-nav');
+	new dynamic({
+		propsData:{
+			dynamicWord:[
+				'3小时前***购买了44类-医疗园艺商标',
+				'11小时前***购买了02类-涂料油漆商标',
+				'23小时前***购买了34类-烟草烟具商标',
+				'1天前***购买了 09类-科学仪器商标',
+			],
+		}
+	}).$mount('dynamic');
+	
+	new serviceList().$mount('service-list');
+	new afterSales().$mount('after-sales');
+	
+	new brandShow({
+		propsData:{
+			mtitle: '分类精选',
+			micon: '//cdn.yangqu.com/yq/brand/index/5-1.png',
+			advert: ['//cdn.yangqu.com/yq/brand/index/5-6.jpg','//cdn.yangqu.com/yq/brand/index/5-7.jpg','//cdn.yangqu.com/yq/brand/index/5-8.jpg'],
+			advertUrl:['//www.yangqu.com/about/brand_zr.html','//www.yangqu.com/about/brand_zr.html','//www.yangqu.com/about/brand_zr.html'],
+			brandtype: 'select',
+			ismore:true,
+			istypeselect:true,
+			high:'626px',
+		}
+	}).$mount('select-brand');
+	
+	new brandShow({
+		propsData:{
+			mtitle: '热门商标',
+			micon: '//cdn.yangqu.com/yq/brand/index/6-1.png',
+			advert: ['//cdn.yangqu.com/yq/brand/index/6-2.jpg','//cdn.yangqu.com/yq/brand/index/6-3.jpg','//cdn.yangqu.com/yq/brand/index/6-4.jpg'],
+			advertUrl:['https://rytk20.kuaishang.cn/bs/im.htm?cas=123219___301793&fi=126033&ism=1','//www.yangqu.com/about/copy_right2.html','https://rytk20.kuaishang.cn/bs/im.htm?cas=123219___301793&fi=126033&ism=1'],
+			brandtype : 'hot',
+			ismore:true,
+			istypeselect:false,
+			high:'581px',
+		}
+	}).$mount('hot-brand');
+	
+	new brandShow({
+		propsData:{
+			mtitle: '新品商标',
+			micon: '//cdn.yangqu.com/yq/brand/index/7-1.png',
+			advert: ['//cdn.yangqu.com/yq/brand/index/7-2.jpg','//cdn.yangqu.com/yq/brand/index/7-3.jpg','//cdn.yangqu.com/yq/brand/index/7-4.jpg'],
+			advertUrl:['//www.yangqu.com/about/brand_zr.html','//www.yangqu.com/about/brand_design.html','//www.yangqu.com/about/zhuanli.html'],
+			brandtype : 'new',
+			ismore:true,
+			istypeselect:false,
+			high:'581px',
+		}
+	}).$mount('new-brand');
+	
+	new news().$mount('news');
+
+	$('head').append('<style>'+brandNavStyle+'</style>');
+	$('head').append('<style>'+dynamicStyle+'</style>');
+	$('head').append('<style>'+serviceListStyle+'</style>');
+	$('head').append('<style>'+afterSalesStyle+'</style>');
+	$('head').append('<style>'+newsListStyle+'</style>');
+</script>
+<script src="/file/brand/index/js/index.js?t=202004" type="text/javascript" charset="utf-8"></script>
+<br><br>
+{template 'footer_fxq'}
+
+<script type="text/javascript" src="https://rytk20.kuaishang.cn/bs/ks.j?cI=301793&fI=126033" charset="utf-8"></script>

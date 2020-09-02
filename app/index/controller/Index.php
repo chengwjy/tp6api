@@ -13,8 +13,6 @@ class Index extends BaseController
 
     public function poet()
     {
-        throw new Exception('123');
-        echo $a;
-        return 'test';
+        echo 'de';
     }
 }
