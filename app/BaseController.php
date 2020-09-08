@@ -91,17 +91,15 @@ abstract class BaseController
         return $v->failException(true)->check($data);
     }
 
-    // 魔术方法，当访问的类的方法没有时
+    // 魔术方法，当访问的类的方法没有时(当错误被接管时不需要此方法)
     public function __call($name, $arguments){
         if($this->request->isAjax()){
             // 如果我们的模块是API模块，需要输入API的数据格式
-            return show(config('status.action_not_found'), "找不到{$name}方法", [], 404);
+            return $this->sendError("找不到该方法");
         }else{
             // 如果我们是模板引擎的方式
-            return show(config('status.action_not_found'), "找不到{$name}方法", [], 404);
+            return $this->sendError("找不到该方法");
         }
         
-        // dump($name);
-        // dump($requests);
     }
 }
