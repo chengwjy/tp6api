@@ -8,8 +8,8 @@ use app\BaseController;
 use Exception;
 
 class Role extends BaseController{
-    // 新增登陆
+    // 新增角色
     public function add(RoleService $service, RoleRequest $roleRequest){    
-        echo 33;
+        echo USERID;
     }
 }

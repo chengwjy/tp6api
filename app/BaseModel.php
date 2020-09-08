@@ -18,6 +18,10 @@ abstract class BaseModel extends Model
 
     protected $updateTime = 'update_time';
 
+    // 获取表名
+    public function get_table(){
+        return $this->name;
+    }
     /**
      * 获取所有.
      */

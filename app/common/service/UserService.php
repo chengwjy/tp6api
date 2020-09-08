@@ -36,15 +36,4 @@ class UserService extends BaseService{
         $this->redis->expire($token, config('auth.expires_in'));
         return $token;
     }
-
-    // 验证token
-    public function checkToken(string $token, &$id, &$username){
-        $ret = $this->redis->hMget($token, ['id', 'username']);
-        $id = $ret['id'];
-        $username = $ret['username'];
-        if(!$id){
-            return false;
-        }
-        return true;
-    }
 } 
