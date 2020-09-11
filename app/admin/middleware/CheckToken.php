@@ -21,7 +21,7 @@ class CheckToken
             throw new Exception('token无效');
         }
         // 定义用户id常量
-        define("USERID", intval($id));
+        request() ->userID = intval($id);
         // 刷新token时间
         $redis->expire($accessToken, config('auth.expires_in'));
         return $next($request);

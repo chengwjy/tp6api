@@ -1,0 +1,25 @@
+[2020-09-10T14:43:23+08:00][error] [0]redis连接失败[D:\xm\tp6api\app\common\lib\Redis.php:12]
+[2020-09-10T14:43:47+08:00][sql] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=auth;charset=utf8
+[2020-09-10T14:43:47+08:00][sql] SHOW FULL COLUMNS FROM `co_user` [ RunTime:0.004000s ]
+[2020-09-10T14:43:47+08:00][sql] SELECT * FROM `co_user` WHERE  `username` = 'ru' LIMIT 1 [ RunTime:0.002000s ]
+[2020-09-10T14:43:54+08:00][sql] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=auth;charset=utf8
+[2020-09-10T14:43:54+08:00][sql] SHOW FULL COLUMNS FROM `co_user` [ RunTime:0.004000s ]
+[2020-09-10T14:43:54+08:00][sql] SELECT * FROM `co_user` WHERE  `username` = 'ru' LIMIT 1 [ RunTime:0.000000s ]
+[2020-09-10T14:44:01+08:00][error] [0]token无效[D:\xm\tp6api\app\admin\middleware\CheckToken.php:21]
+[2020-09-10T14:44:03+08:00][sql] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=auth;charset=utf8
+[2020-09-10T14:44:03+08:00][sql] SHOW FULL COLUMNS FROM `co_menu` [ RunTime:0.003000s ]
+[2020-09-10T14:44:03+08:00][sql] SELECT * FROM `co_menu` WHERE  `name` = 'roleadd' LIMIT 1 [ RunTime:0.000000s ]
+[2020-09-10T14:44:03+08:00][sql] SELECT * FROM `co_menu` `m` INNER JOIN `co_role_menu` `rm` ON `rm`.`menu_id`=`m`.`id` INNER JOIN `co_role` `r` ON `r`.`id`=`rm`.`role_id` INNER JOIN `co_user_role` `ur` ON `ur`.`role_id`=`r`.`id` WHERE  `ur`.`user_id` = 2  AND `rm`.`menu_id` = 1 LIMIT 1 [ RunTime:0.024000s ]
+[2020-09-10T14:59:34+08:00][sql] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=auth;charset=utf8
+[2020-09-10T14:59:34+08:00][sql] SHOW FULL COLUMNS FROM `co_menu` [ RunTime:0.003000s ]
+[2020-09-10T14:59:34+08:00][sql] SELECT * FROM `co_menu` WHERE  `name` = 'roleadd' LIMIT 1 [ RunTime:0.000000s ]
+[2020-09-10T14:59:34+08:00][sql] SELECT * FROM `co_menu` `m` INNER JOIN `co_role_menu` `rm` ON `rm`.`menu_id`=`m`.`id` INNER JOIN `co_role` `r` ON `r`.`id`=`rm`.`role_id` INNER JOIN `co_user_role` `ur` ON `ur`.`role_id`=`r`.`id` WHERE  `ur`.`user_id` = 2  AND `rm`.`menu_id` = 1 LIMIT 1 [ RunTime:0.007000s ]
+[2020-09-10T14:59:34+08:00][error] [0]Too few arguments to function app\BaseController::__construct(), 0 passed in D:\xm\tp6api\app\admin\controller\member\Role.php on line 13 and exactly 1 expected[D:\xm\tp6api\app\BaseController.php:44]
+[2020-09-10T16:12:00+08:00][error] [0]token无效[D:\xm\tp6api\app\admin\middleware\CheckToken.php:21]
+[2020-09-10T16:12:04+08:00][sql] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=auth;charset=utf8
+[2020-09-10T16:12:04+08:00][sql] SHOW FULL COLUMNS FROM `co_user` [ RunTime:0.003000s ]
+[2020-09-10T16:12:04+08:00][sql] SELECT * FROM `co_user` WHERE  `username` = 'ru' LIMIT 1 [ RunTime:0.000000s ]
+[2020-09-10T16:12:10+08:00][sql] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;port=3306;dbname=auth;charset=utf8
+[2020-09-10T16:12:10+08:00][sql] SHOW FULL COLUMNS FROM `co_menu` [ RunTime:0.003000s ]
+[2020-09-10T16:12:10+08:00][sql] SELECT * FROM `co_menu` WHERE  `name` = 'roleadd' LIMIT 1 [ RunTime:0.000000s ]
+[2020-09-10T16:12:10+08:00][sql] SELECT * FROM `co_menu` `m` INNER JOIN `co_role_menu` `rm` ON `rm`.`menu_id`=`m`.`id` INNER JOIN `co_role` `r` ON `r`.`id`=`rm`.`role_id` INNER JOIN `co_user_role` `ur` ON `ur`.`role_id`=`r`.`id` WHERE  `ur`.`user_id` = 2  AND `rm`.`menu_id` = 1 LIMIT 1 [ RunTime:0.006000s ]

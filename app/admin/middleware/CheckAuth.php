@@ -13,7 +13,7 @@ class CheckAuth
     // 验证用户是否有该路由权限
     public function handle($request, \Closure $next,string $name = ''){
         // 若不是顶级管理员，验证路由权限
-        if(config('auth.admin_id') !== USERID){
+        if(config('auth.admin_id') !== request() ->userID){
             
             $menu = Menu::where(['name' => $name])->find();
             if(!$menu){
@@ -26,7 +26,7 @@ class CheckAuth
                         ->join((new RoleMenu)->get_table() .' rm', 'rm.menu_id=m.id')
                         ->join((new Role)->get_table() .' r', 'r.id=rm.role_id')
                         ->join((new UserRole)->get_table() .' ur', 'ur.role_id=r.id')
-                        ->where(['ur.user_id' => USERID, 'rm.menu_id' => $menu->id])
+                        ->where(['ur.user_id' => request() ->userID, 'rm.menu_id' => $menu->id])
                         ->find();
                 if(!$result){
                     throw new Exception('权限校验失败');
